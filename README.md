@@ -26,3 +26,9 @@
   <ul>
     <li><a href="SysDesigns/SystemDesignSteps/README.md">Basic System Design Steps</a></li>
   </ul>
+  <br/>
+  <ul>
+    <li><a href="SysDesigns/NewsFeed/README.md">News Feed</a>
+      <ul><li><a href="SysDesigns/NewsFeed/Project/README.md">Project</a></li></ul>
+    </li>
+  </ul>
