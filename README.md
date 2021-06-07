@@ -9,6 +9,11 @@
         <li><a href="Basics/Polling SSE and Web Sockets/README.md#websockets">WebSockets</a></li>
       </ol>
     </li>
+    <li> Database
+      <ol>
+        <li><a href=""Basics/CAP Theorem/README.md">CAP Theorem</a></li>
+      </ol>
+    </li>
     <li> Components
       <ol>
         <li><a href="Basics/Message Queues/README.md">Message Queues</a></li>
