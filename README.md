@@ -14,8 +14,8 @@
         <li><a href="Basics/Message Queues/README.md">Message Queues</a></li>
         <li><a href="Basics/Cache/README.md">Cache</a>
           <ol>
-            <li>Reverse Proxy or CDN</li>
-            <li>Forward Proxy</li>
+            <li><a href="Basics/Cache/README.md#client-side-caching">Reverse Proxy or CDN</a></li>
+            <li><a href="Basics/Cache/README.md#client-side-caching">Forward Proxy</a></li>
           </ol>
         </li>
       </ol>
