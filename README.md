@@ -12,6 +12,12 @@
     <li> Components
       <ol>
         <li><a href="Basics/Message Queues/README.md">Message Queues</a></li>
+        <li><a href="Basics/Cache/README.md">Cache</a>
+          <ol>
+            <li>Reverse Proxy or CDN</li>
+            <li>Forward Proxy</li>
+          </ol>
+        </li>
       </ol>
     </li>  
   </ol> 
