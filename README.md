@@ -14,7 +14,8 @@
         <li><a href="Basics/CAP Theorem/README.md">CAP Theorem</a></li>
         <li>Database management systems:
           <ul>
-            <li><a href="Basics/Databases/RDBMS/README.md">RDBMS (MySQL)</a></li>
+            <li><a href="Basics/Databases/RDBMS/README.md">RDBMS (MySQL) CA-System</a></li>
+            <li><a href="Basics/Databases/Cassandra/README.md">Cassandra AP-System</a> </li>
           </ul>
         </li>
       </ol>
