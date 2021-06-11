@@ -131,8 +131,8 @@ Before proceeding to scale the system, we look at the bottlenecks of the system 
     <li>Cache
       <ol>
         <li>Client side Vs Server side</li>
-        <li>Refresh policies: LRU, LFU</li>
-        <li>Eviction Policies: Cache aside, Write through, Write ahead, Refresh ahead</li>
+        <li>Eviction Policies: LRU, LFU, FIFO</li>
+        <li>Caching Patterns: Cache aside, Write through, Write ahead, Refresh ahead</li>
       </ol>
     </li>
     <li>CDN [Push vs Pull]</li>
