@@ -23,5 +23,5 @@
   </ol>
 
   <h2>Good Reads</h2>
-  https://medium.com/@sunny_81705/redis-master-slave-architecture-e730403cb495
+  https://medium.com/@sunny_81705/redis-master-slave-architecture-e730403cb495 <br/>
   https://www.ibm.com/cloud/learn/redis
