@@ -5,7 +5,7 @@
   <img src="img/TCP.png">
   
   <h2>HTTP vs HTTPS</h2>
-    <p>HTTPS stands for HTTP secure, it encrypts the data you send to server. Thus it’s more secure.</p>
+    <p>HTTPS stands for HTTP secure, it encrypts the data you send to server. Thus, it’s more secure.</p>
   
   <h2>Popular Types of HTTP Request Methods</h2>
     <h3>GET</h3>
@@ -18,6 +18,14 @@
       <p>PUT requests are same as POST requests, except for they are idempotent.</p>
       <p>So if you send retry a request multiple times, that should be equivalent to single request modification.</p>
       <p>Example: Adding caption under the profile picture.</p>
+    <h2>Easy way of remembering GET, POST, PUT</h2>
+      <code>
+        Create NEW record => POST <br/>
+        Read => GET <br/>
+        If the record exists then update else create a new record => PUT <br/>
+        Update/modify => PATCH <br/>
+        Delete=>DELETE  <br/>
+      </code>
     
     
   

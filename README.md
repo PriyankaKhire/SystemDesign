@@ -3,7 +3,13 @@
     <li>Network
       <ol>
         <li><a href="Basics/Network Protocol/README.md">Network Protocols</a></li>
-        <li><a href="Basics/HTTP Requests/README.md">HTTP Requests</a></li>
+        <li><a href="Basics/HTTP Requests/README.md">HTTP Requests</a>
+          <ol>
+            <li>GET</li>
+            <li>POST</li>
+            <li>PUT</li>
+          </ol>
+        </li>
         <li><a href="Basics/Polling SSE and Web Sockets/README.md#polling">Polling</a></li>
         <li><a href="Basics/Polling SSE and Web Sockets/README.md#server-sent-events-sse">Server Sent Events</a></li>
         <li><a href="Basics/Polling SSE and Web Sockets/README.md#websockets">WebSockets</a></li>
