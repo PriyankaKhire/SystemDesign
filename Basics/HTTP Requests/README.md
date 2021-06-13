@@ -19,13 +19,11 @@
       <p>So if you send retry a request multiple times, that should be equivalent to single request modification.</p>
       <p>Example: Adding caption under the profile picture.</p>
     <h2>Easy way of remembering GET, POST, PUT</h2>
-      <code>
-        Create NEW record => POST <br/>
-        Read => GET <br/>
-        If the record exists then update else create a new record => PUT <br/>
-        Update/modify => PATCH <br/>
-        Delete=>DELETE  <br/>
-      </code>
+      <code>Create NEW record => POST </code> <br/>
+      <code>Read => GET </code> <br/>
+      <code>If the record exists then update else create a new record => PUT </code> <br/>
+      <code>Update/modify => PATCH </code> <br/>
+      <code>Delete=>DELETE  </code> <br/>
     
     
   
