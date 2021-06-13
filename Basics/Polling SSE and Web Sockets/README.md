@@ -9,15 +9,14 @@
     <p>The problem with Polling is that the client has to keep asking the server for any new data. As a result, a lot of responses are empty, creating HTTP overhead.</p>
     <img src="img/ShortPolling.png"><br/>
     Example of short polling:<br/>
-    <code>
-      00:00:00 C-> Is the cake ready? <br/>
-      00:00:01 S-> No, wait. <br/>
-      00:00:01 C-> Is the cake ready? <br/>
-      00:00:02 S-> No, wait. <br/>
-      00:00:02 C-> Is the cake ready?  <br/>
-      00:00:03 S-> Yes. Have some lad. <br/>
-      00:00:03 C-> Is the other cake ready? .. 
-    </code>
+    <code>00:00:00 C-> Is the cake ready? </code><br/>
+    <code>00:00:01 S-> No, wait. </code><br/>
+    <code>00:00:01 C-> Is the cake ready? </code><br/>
+    <code>00:00:02 S-> No, wait. </code><br/>
+    <code>00:00:02 C-> Is the cake ready?  </code><br/>
+    <code>00:00:03 S-> Yes. Have some lad. </code><br/>
+    <code>00:00:03 C-> Is the other cake ready? .. </code><br/>
+    
   <h2>Long Polling</h2>
     <ol>
       <li>The client opens a TCP tunnel and sends a HTTP request to the server requesting information.</li>
@@ -29,11 +28,10 @@
     <p>The HTTP long polling mechanism can be applied to either persistent or non-persistent HTTP connections. The use of persistent HTTP connections will avoid the additional overhead of establishing a new TCP/IP connection [TCP] for every long poll request.</p>
     <img src="img/LongPolling.png">  <br/>
     Example of long polling:<br/>
-    <code>
-      12:00 00:00:00 C-> Is the cake ready? <br/>
-      12:00 00:00:03 S-> Yes.Have some lad.  <br/>
-      12:00 00:00:03 C-> Is the cake ready?   <br/>
-    </code>
+    <code>12:00 00:00:00 C-> Is the cake ready? </code><br/>
+    <code>12:00 00:00:03 S-> Yes.Have some lad. </code><br/>
+    <code>12:00 00:00:03 C-> Is the cake ready? </code><br/>
+    
   
 <h1>Server Sent Events (SSE)</h1>  
   <p>In this process, the server establishes a one way, long term connection with the client. Only the server is allowed to push data to the client. If the client wants to send data to the server, it needs to use another technology/protocol to do so.</p>
@@ -47,13 +45,11 @@
   <p>The main benefit of SSEs is it provides an efficient one directional data stream where the client and server don’t need to constantly reestablish the connection.</p>
   <img src="img/SSE.png"><br/>
   Example of SSE:<br/>
-    <code>
-      12:00 00:00:00 C-> Is the cake ready? <br/>
-      12:00 00:00:03 S-> Yes.Have some lad.  <br/>
-      12:00 00:00:05 S-> Here is more cake.  <br/>
-      12:00 00:00:08 S-> Here is some more cake.  <br/>
-    </code>
-  
+  <code>12:00 00:00:00 C-> Is the cake ready? </code><br/>
+  <code>12:00 00:00:03 S-> Yes.Have some lad.  </code><br/>
+  <code>12:00 00:00:05 S-> Here is more cake.  </code><br/>
+  <code>12:00 00:00:08 S-> Here is some more cake.  </code><br/>
+
 <h1>WebSockets</h1>
   <p>It is a two-way message passing protocol based on TCP. WebSockets are faster for data transmission than HTTP.</p>
   <ol>
@@ -66,11 +62,10 @@
   <p>The main downside of WebSockets is it takes a good amount of initial developer work to implement. </p>
   <img src="img/WebSockets.png"><br/>
   Example of Websockets:<br/>
-    <code>
-      00:00 00:00:00 C-> Is the cake ready? <br/>
-      00:00 00:00:03 S-> Yes.Have some lad.  <br/>
-      00:00 00:00:05 C-> I want more cake ? <br/>
-      00:00 00:00:05 S-> Here is some more cake.  <br/>
-    </code>
+  <code>00:00 00:00:00 C-> Is the cake ready? </code><br/>
+  <code>00:00 00:00:03 S-> Yes.Have some lad.  </code><br/>
+  <code>00:00 00:00:05 C-> I want more cake ? </code><br/>
+  <code>00:00 00:00:05 S-> Here is some more cake.  </code><br/>
+    
   <p>An example where WebSockets is really useful is multiplayer online gaming, </p>  
   
