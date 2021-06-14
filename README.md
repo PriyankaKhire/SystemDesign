@@ -51,3 +51,9 @@
       <ul><li><a href="SysDesigns/NewsFeed/Project/README.md">Project</a></li></ul>
     </li>
   </ul>
+
+<h1>Good Reads</h1>
+  <ul>
+    <li><a href="https://github.com/donnemartin/system-design-primer">System design primer by Donne Martin</a></li>
+    <li><a href="https://github.com/checkcheckzz/system-design-interview">System design Interview resources by CheckCheckZach</a></li>
+  </ul>
