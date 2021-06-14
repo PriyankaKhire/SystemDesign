@@ -23,7 +23,8 @@
             <li><a href="Basics/Databases/RDBMS/README.md">RDBMS (MySQL) CA-System</a></li>
             <li><a href="Basics/Databases/Cassandra/README.md">Cassandra AP-System</a> </li>
             <li><a href="Basics/Databases/Redis/README.md">Redis AP-System</a> </li>
-            <li><a href="Basics/Databases/MongoDB/README.md">MongoDB CA-System</a> </li>
+            <li><a href="Basics/Databases/MongoDB/README.md">MongoDB CP-System</a> </li>
+            <li><a href="Basics/Databases/Memcached/README.md">Memcached CA-System </a> </li>
           </ul>
         </li>
       </ol>
@@ -56,4 +57,6 @@
   <ul>
     <li><a href="https://github.com/donnemartin/system-design-primer">System design primer by Donne Martin</a></li>
     <li><a href="https://github.com/checkcheckzz/system-design-interview">System design Interview resources by CheckCheckZach</a></li>
+    <li><a href="https://www.ibm.com/cloud/learn">IBM Cloud Learn</a></li>
+    <li><a href="https://igotanoffer.com/blogs/tech/network-protocols-proxies-system-design-interview">System design Interview concepts on igotanoffer</a></li>
   </ul>
