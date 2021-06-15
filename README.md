@@ -39,7 +39,12 @@
           </ol>
         </li>
       </ol>
-    </li>  
+    </li> 
+    <li>Other Softwares
+      <ol>
+        <li><a href="Basics/Other Softwares/Zookeeper/README.md">Zookeeper</a> </li>
+      </ol>
+    </li>
   </ol> 
     
 <h1>System Design</h1>
