@@ -17,6 +17,7 @@
     </li>
     <li> Database
       <ol>
+        <li><a href="Basics/ACID Theorem/README.md">ACID and BASE Theorems</a> </li>
         <li><a href="Basics/CAP Theorem/README.md">CAP Theorem</a></li>
         <li>Database management systems:
           <ul>
