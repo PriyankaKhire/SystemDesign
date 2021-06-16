@@ -17,6 +17,9 @@
     </li>
     <li> Database
       <ol>
+        <li><a href="Basics/Horizontal and Vertical Scaling/README.md">Horizontal Vs Vertical Scaling</a> 
+        <ul><li><a href="Basics/Horizontal and Vertical Scaling/Project">Project</a></li></ul>
+        </li>
         <li><a href="Basics/ACID Theorem/README.md">ACID and BASE Theorems</a> </li>
         <li><a href="Basics/CAP Theorem/README.md">CAP Theorem</a></li>
         <li>Database management systems:
