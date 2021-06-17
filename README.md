@@ -17,6 +17,7 @@
     </li>
     <li> Database
       <ol>
+        <li><a href="Basics/Relational Vs NonRelational/README.md">Relational Vs Non-Relational Database</a> </li>
         <li><a href="Basics/Horizontal and Vertical Scaling/README.md">Horizontal Vs Vertical Scaling</a> 
         <ul><li><a href="Basics/Horizontal and Vertical Scaling/Project">Project</a></li></ul>
         </li>
