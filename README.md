@@ -65,14 +65,19 @@
   </ol> 
     
 <h1>System Design</h1>
+  <p>Basics</p>
   <ul>
     <li><a href="SysDesigns/SystemDesignSteps/README.md">Basic System Design Steps</a></li>
   </ul>
-  <br/>
+  <p>My designs</p>
   <ul>
     <li><a href="SysDesigns/NewsFeed/README.md">News Feed</a>
       <ul><li><a href="SysDesigns/NewsFeed/Project/README.md">Project</a></li></ul>
     </li>
+  </ul>
+  <p>Notes on existing architectures</p>
+  <ul>
+    <li><a href="SysDesigns/Pinterest/README.md">Pinterest Architecture 2012</a> </li>
   </ul>
 
 <h1>Good Reads</h1>
@@ -81,4 +86,5 @@
     <li><a href="https://github.com/checkcheckzz/system-design-interview">System design Interview resources by CheckCheckZach</a></li>
     <li><a href="https://www.ibm.com/cloud/learn">IBM Cloud Learn</a></li>
     <li><a href="https://igotanoffer.com/blogs/tech/network-protocols-proxies-system-design-interview">System design Interview concepts on igotanoffer</a></li>
+    <li><a href="http://highscalability.com/">High Scalability</a> </li>
   </ul>
