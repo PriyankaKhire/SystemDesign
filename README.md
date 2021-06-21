@@ -25,11 +25,23 @@
         <li><a href="Basics/CAP Theorem/README.md">CAP Theorem</a></li>
         <li>Database management systems:
           <ul>
-            <li><a href="Basics/Databases/RDBMS/README.md">RDBMS (MySQL) CA-System</a></li>
-            <li><a href="Basics/Databases/Cassandra/README.md">Cassandra AP-System</a> </li>
-            <li><a href="Basics/Databases/Redis/README.md">Redis AP-System</a> </li>
-            <li><a href="Basics/Databases/MongoDB/README.md">MongoDB CP-System</a> </li>
-            <li><a href="Basics/Databases/Memcached/README.md">Memcached CA-System </a> </li>
+            <li>CA Systems
+              <ul>
+                <li><a href="Basics/Databases/RDBMS/README.md">RDBMS (MySQL) CA-System</a></li>
+                <li><a href="Basics/Databases/Memcached/README.md">Memcached CA-System </a> </li>
+              </ul>
+            </li>
+            <li>AP System
+              <ul>
+                <li><a href="Basics/Databases/Cassandra/README.md">Cassandra AP-System</a> </li>
+                <li><a href="Basics/Databases/Redis/README.md">Redis AP-System</a> </li>
+              </ul>
+            </li>
+            <li>CP System
+              <ul>
+                <li><a href="Basics/Databases/MongoDB/README.md">MongoDB CP-System</a> </li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ol>
