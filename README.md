@@ -60,6 +60,7 @@
     <li>Other Softwares
       <ol>
         <li><a href="Basics/Other Softwares/Zookeeper/README.md">Zookeeper</a> </li>
+        <li><a href="Basics/Other Softwares/Apache Solr/README.md">Solr</a> </li>
       </ol>
     </li>
   </ol> 
