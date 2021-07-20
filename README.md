@@ -85,7 +85,10 @@
   <ul>
     <li><a href="https://github.com/donnemartin/system-design-primer">System design primer by Donne Martin</a></li>
     <li><a href="https://github.com/checkcheckzz/system-design-interview">System design Interview resources by CheckCheckZach</a></li>
+    <li><a href="https://gist.github.com/vasanthk/485d1c25737e8e72759f">System Design Cheat sheet by Vasanth K</a> </li>
     <li><a href="https://www.ibm.com/cloud/learn">IBM Cloud Learn</a></li>
     <li><a href="https://igotanoffer.com/blogs/tech/network-protocols-proxies-system-design-interview">System design Interview concepts on igotanoffer</a></li>
     <li><a href="http://highscalability.com/">High Scalability</a> </li>
+    <li><a href="http://patrickhalina.com/posts/ml-systems-design-interview-guide/">ML Systems Design Interview Guide by Patrik Halina</a> </li>
+    <li><a href="https://github.com/alex/what-happens-when">What happens when you type something in address bar.</a> </li>
   </ul>
