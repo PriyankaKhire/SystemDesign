@@ -55,6 +55,7 @@
             <li><a href="Basics/Cache/README.md#client-side-caching">Forward Proxy</a></li>
           </ol>
         </li>
+        <li><a href="Basics/Load Balancing/README.md">Load Balancing</a></li>
         <li><a href="Basics/DNS/README.md">DNS Server</a></li>
       </ol>
     </li> 
