@@ -63,4 +63,5 @@
   <ul>
     <li><a href="http://highscalability.com/blog/2007/8/16/scaling-secret-2-denormalizing-your-way-to-speed-and-profit.html">Denormalizing Your Way To Speed And Profit - Article by high scalability</a> </li>
     <li><a href="https://en.wikipedia.org/wiki/Database_normalization">Database normalization - Wikipedia</a></li>
+    <li><a href="https://www.geeksforgeeks.org/denormalization-in-databases/">Denormalization in Databases by GeeksForGeeks</a></li>
   </ul>
