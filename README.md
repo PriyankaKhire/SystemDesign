@@ -44,7 +44,7 @@
             </li>
           </ul>
         </li>
-        <li><a href="Basics/Data Partitioning/README.md">Data Partitioning Methods</a>
+        <li><a href="Basics/Data Partitioning Methods/README.md">Data Partitioning Methods</a>
           <ul>
             <li><a href="Basics/Data Partitioning Methods/README.md#horizontal-partitioning">Horizontal Partitioning (Sharding)</a></li>
             <li><a href="Basics/Data Partitioning Methods/README.md#vertical-partitioning">Vertical Partitioning</a></li>
