@@ -44,6 +44,13 @@
             </li>
           </ul>
         </li>
+        <li><a href="Basics/Data Partitioning/README.md">Data Partitioning Methods</a>
+          <ul>
+            <li><a href="Basics/Data Partitioning/README.md#horizontal-partitioning">Horizontal Partitioning (Sharding)</a></li>
+            <li><a href="Basics/Data Partitioning/README.md#vertical-partitioning">Vertical Partitioning</a></li>
+          </ul>
+        </li>
+        <li><a href="Basics/Denormalization vs Normalization/README.md">Data Normalization and De-normalization</a></li>
       </ol>
     </li>
     <li> Components
