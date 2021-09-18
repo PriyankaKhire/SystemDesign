@@ -52,7 +52,11 @@
         </li>
         <li><a href="Basics/Data Partitioning Criteria/README.md">Data Partitioning Criteria</a> 
           <ul>
-            <li></li>
+            <li><a href="Basics/Data Partitioning Criteria/README.md#range">Range</a></li>
+            <li><a href="Basics/Data Partitioning Criteria/README.md#list">List</a></li>
+            <li><a href="Basics/Data Partitioning Criteria/README.md#hash">Hash</a></li>
+            <li><a href="Basics/Data Partitioning Criteria/README.md#round-robin">Round Robin</a></li>
+            <li><a href="Basics/Data Partitioning Criteria/README.md#name-node">Name Node</a></li>
           </ul>
         </li>
         <li><a href="Basics/Denormalization vs Normalization/README.md">Data Normalization and De-normalization</a></li>
