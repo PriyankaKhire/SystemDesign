@@ -75,6 +75,11 @@
         <li><a href="Basics/DNS/README.md">DNS Server</a></li>
       </ol>
     </li> 
+    <li>Other Concepts
+      <ol>
+        <li><a href="">Quorum</a></li>
+      </ol>
+    </li>
     <li>Other Softwares
       <ol>
         <li><a href="Basics/Other Softwares/Docker/README.md">Docker</a> </li>
@@ -98,6 +103,7 @@
   <p>Notes on existing architectures</p>
   <ul>
     <li><a href="SysDesigns/Pinterest/README.md">Pinterest Architecture 2012</a> </li>
+    <li><a href="SysDesigns/Dynamo/README.md">Dynamo: Distributed key-value store</a> </li>
   </ul>
 
 <h1>Good Reads</h1>
