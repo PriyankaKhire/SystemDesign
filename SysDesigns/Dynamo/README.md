@@ -27,6 +27,7 @@
     </p>
   <h2>Node failures</h2>
     <p>If there are any node failures in the system, Dyanmo copies the data to all the healthy nodes in the cluster instead of following the majority quorum (N/2 + 1) rule. This is called <b><a href="../../Basics//Other Concepts/Quorum/README.md#sloppy-quorum">Sloppy Quorum</a></b>.</p>
+    <p>The data is eventually written using <a href="../../Basics/Other Concepts/Quorum/README.md#hinted-handoff">Hinted Handoff</a>, this is how it guarantees always write readiness. (High availability) </p>
   <h2>Inter-Node Communication</h2>
     <p>The nodes use <b><a href="../../Basics/Other Concepts/Gossip Protocol/README.md">Gossip Protocol</a></b> to keep track of each other. In this each node initiates a <code>Gossip Round</code> where it tells information about itself and other nodes it knows of to one other node. Eventually all the nodes learn about other nodes and if there is any node failure.</p>
 
