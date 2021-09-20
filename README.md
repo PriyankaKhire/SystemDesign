@@ -77,7 +77,8 @@
     </li> 
     <li>Other Concepts
       <ol>
-        <li><a href="">Quorum</a></li>
+        <li><a href="Basics/Other Concepts/Quorum/README.md">Quorum</a></li>
+        <li><a href="Basics/Other Concepts/Gossip Protocol/README.md">Gossip Protocol</a></li>
       </ol>
     </li>
     <li>Other Softwares
