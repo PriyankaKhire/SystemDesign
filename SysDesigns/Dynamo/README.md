@@ -22,12 +22,12 @@
         Depending on how you have configured Dynamo, the get operation can also return multiple versions of the value object.
       </p>
   <h2>Data Partitioning Criteria used</h2>
-    <p>It applies <u>MD5 <a href="../Basics/Data Partitioning Criteria/README.md#hash">hashing algorithm</a></u> on the Key to figure out which shard it should reside on. <br/>
+    <p>It applies <u>MD5 <a href="../../Basics/Data Partitioning Criteria/README.md#hash">hashing algorithm</a></u> on the Key to figure out which shard it should reside on. <br/>
       To tackle the problem of adding and removing new servers, it uses <b>Consistent Hashing.</b>
     </p>
   <h2>Node failures</h2>
-    <p>If there are any node failures in the system, Dyanmo copies the data to all the healthy nodes in the cluster instead of following the majority quorum (N/2 + 1) rule. This is called <b><a href="../Basics//Other Concepts/Quorum/README.md#sloppy-quorum">Sloppy Quorum</a></b>.</p>
+    <p>If there are any node failures in the system, Dyanmo copies the data to all the healthy nodes in the cluster instead of following the majority quorum (N/2 + 1) rule. This is called <b><a href="../../Basics//Other Concepts/Quorum/README.md#sloppy-quorum">Sloppy Quorum</a></b>.</p>
   <h2>Inter-Node Communication</h2>
-    <p>The nodes use <b><a href="../Basics/Other Concepts/Gossip Protocol/README.md">Gossip Protocol</a></b> to keep track of each other. In this each node initiates a <code>Gossip Round</code> where it tells information about itself and other nodes it knows of to one other node. Eventually all the nodes learn about other nodes and if there is any node failure.</p>
+    <p>The nodes use <b><a href="../../Basics/Other Concepts/Gossip Protocol/README.md">Gossip Protocol</a></b> to keep track of each other. In this each node initiates a <code>Gossip Round</code> where it tells information about itself and other nodes it knows of to one other node. Eventually all the nodes learn about other nodes and if there is any node failure.</p>
 
 
