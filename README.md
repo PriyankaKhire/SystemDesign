@@ -106,6 +106,7 @@
   <ul>
     <li><a href="SysDesigns/Pinterest/README.md">Pinterest Architecture 2012</a> </li>
     <li><a href="SysDesigns/Dynamo/README.md">Dynamo: Distributed key-value store</a> </li>
+    <li><a href="SysDesigns/Instagram/2011 Architecture Overview/README.md">Instagram Architecture 2011</a> </li>
   </ul>
 
 <h1>Good Reads</h1>
