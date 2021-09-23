@@ -92,7 +92,7 @@
     <li> Designing Data-Intensive Applications Notes
       <ol>
         <li><a href="Basics/DDIA/Chapter 1/README.md">Reliable, Scalable, and Maintainable Applications</a></li>
-        <li><a href="Basics/DDIA"><strike>Data Models and Query Languages</strike></a></li>
+        <li><a href="Basics/DDIA/Chapter 2/README.md">Data Models and Query Languages</a></li>
         <!--<li><a href="Basics/DDIA"><strike>Storage and Retrieval</strike></a></li>
         <li><a href="Basics/DDIA"><strike>Encoding and Evolution</strike></a></li>
         <li><a href="Basics/DDIA"><strike>Replication</strike></a></li>
