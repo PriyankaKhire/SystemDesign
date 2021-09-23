@@ -93,7 +93,7 @@
       <ol>
         <li><a href="Basics/DDIA/Chapter 1/README.md">Reliable, Scalable, and Maintainable Applications</a></li>
         <li><a href="Basics/DDIA"><strike>Data Models and Query Languages</strike></a></li>
-        <li><a href="Basics/DDIA"><strike>Storage and Retrieval</strike></a></li>
+        <!--<li><a href="Basics/DDIA"><strike>Storage and Retrieval</strike></a></li>
         <li><a href="Basics/DDIA"><strike>Encoding and Evolution</strike></a></li>
         <li><a href="Basics/DDIA"><strike>Replication</strike></a></li>
         <li><a href="Basics/DDIA"><strike>Partitioning</strike></a></li>
@@ -102,7 +102,7 @@
         <li><a href="Basics/DDIA"><strike>Consistency and Consensus</strike></a></li>
         <li><a href="Basics/DDIA"><strike>Batch Processing</strike></a></li>
         <li><a href="Basics/DDIA"><strike>Stream Processing</strike></a></li>
-        <li><a href="Basics/DDIA"><strike>The Future of Data Systems</strike></a></li>
+        <li><a href="Basics/DDIA"><strike>The Future of Data Systems</strike></a></li>-->
       </ol>
     </li>
   </ol> 
