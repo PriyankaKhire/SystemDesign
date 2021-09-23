@@ -92,17 +92,17 @@
     <li> Designing Data-Intensive Applications Notes
       <ol>
         <li><a href="Basics/DDIA/Chapter 1/README.md">Reliable, Scalable, and Maintainable Applications</a></li>
-        <li><a href="Basics/DDIA">Data Models and Query Languages</a></li>
-        <li><a href="Basics/DDIA">Storage and Retrieval</a></li>
-        <li><a href="Basics/DDIA">Encoding and Evolution</a></li>
-        <li><a href="Basics/DDIA">Replication</a></li>
-        <li><a href="Basics/DDIA">Partitioning</a></li>
-        <li><a href="Basics/DDIA">Transactions</a></li>
-        <li><a href="Basics/DDIA">The Trouble with Distributed Systems</a></li>
-        <li><a href="Basics/DDIA">Consistency and Consensus</a></li>
-        <li><a href="Basics/DDIA">Batch Processing</a></li>
-        <li><a href="Basics/DDIA">Stream Processing</a></li>
-        <li><a href="Basics/DDIA">The Future of Data Systems</a></li>
+        <li><a href="Basics/DDIA"><strike>Data Models and Query Languages</strike></a></li>
+        <li><a href="Basics/DDIA"><strike>Storage and Retrieval</strike></a></li>
+        <li><a href="Basics/DDIA"><strike>Encoding and Evolution</strike></a></li>
+        <li><a href="Basics/DDIA"><strike>Replication</strike></a></li>
+        <li><a href="Basics/DDIA"><strike>Partitioning</strike></a></li>
+        <li><a href="Basics/DDIA"><strike>Transactions</strike></a></li>
+        <li><a href="Basics/DDIA"><strike>The Trouble with Distributed Systems</strike></a></li>
+        <li><a href="Basics/DDIA"><strike>Consistency and Consensus</strike></a></li>
+        <li><a href="Basics/DDIA"><strike>Batch Processing</strike></a></li>
+        <li><a href="Basics/DDIA"><strike>Stream Processing</strike></a></li>
+        <li><a href="Basics/DDIA"><strike>The Future of Data Systems</strike></a></li>
       </ol>
     </li>
   </ol> 
