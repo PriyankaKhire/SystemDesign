@@ -89,6 +89,22 @@
         <li><a href="Basics/Other Softwares/Apache Solr/README.md">Solr</a> </li>
       </ol>
     </li>
+    <li> Designing Data-Intensive Applications Notes
+      <ol>
+        <li><a href="Basics/DDIA/Chapter 1/README.md">Reliable, Scalable, and Maintainable Applications</a></li>
+        <li><a href="Basics/DDIA">Data Models and Query Languages</a></li>
+        <li><a href="Basics/DDIA">Storage and Retrieval</a></li>
+        <li><a href="Basics/DDIA">Encoding and Evolution</a></li>
+        <li><a href="Basics/DDIA">Replication</a></li>
+        <li><a href="Basics/DDIA">Partitioning</a></li>
+        <li><a href="Basics/DDIA">Transactions</a></li>
+        <li><a href="Basics/DDIA">The Trouble with Distributed Systems</a></li>
+        <li><a href="Basics/DDIA">Consistency and Consensus</a></li>
+        <li><a href="Basics/DDIA">Batch Processing</a></li>
+        <li><a href="Basics/DDIA">Stream Processing</a></li>
+        <li><a href="Basics/DDIA">The Future of Data Systems</a></li>
+      </ol>
+    </li>
   </ol> 
     
 <h1>System Design</h1>
