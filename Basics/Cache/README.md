@@ -76,7 +76,7 @@
    <ol>
        <li><b>Write through cache:</b>
            <p>The data is written to both cache and DB at the same time.</p>
-           <img src="img/WriteThroughCache.PNG" height="300px" width="300px">
+           <img src="img/WriteThroughCache.PNG" height="500px" width="900px">
            <p> <b>Pros:</b>
                <ul>
                    <li>Low data read latency</li>
@@ -95,7 +95,7 @@
        </li>
        <li><b>Write around cache:</b>
            <p>Data is directly written to DB. Cache only gets updated in case of a miss.</p>
-           <img src="img/WriteAroundCache.PNG" height="300px" width="300px">
+           <img src="img/WriteAroundCache.PNG" height="500px" width="900px">
            <p> <b>Pros:</b>
                <ul>
                    <li>Won't flood the cache with new data that may not be immediately re-read.</li>
@@ -113,7 +113,7 @@
        <li><b>Write Back cache:</b>
            <p>Data is first written to cache, the confirmation of this is sent to client. 
            After certain time period(or some other conditions) the data is then written to DB.</p>
-           <img src="img/WriteBackCache.PNG" height="300px" width="300px">
+           <img src="img/WriteBackCache.PNG" height="500px" width="900px">
            <p> <b>Pros:</b>
                <ul>
                    <li>Data written has low latency and high throughput. (Throughput is the rate at which something is processed)</li>
@@ -136,7 +136,7 @@
            <p>The cache needs to accurately predict what data it needs to refresh, 
            so as to not refresh data that won't be accessed and waste a DB call behind it.
            </p>
-           <img src="img/RefreshAheadCache.PNG" height="300px" width="300px">
+           <img src="img/RefreshAheadCache.PNG" height="500px" width="900px">
            <p> <b>Pros:</b>
                <ul>
                    <li>Reduced read latency.</li>
