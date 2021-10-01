@@ -143,4 +143,5 @@
     <li><a href="https://www.youtube.com/watch?v=-W9F__D3oY4&ab_channel=JorgeScott">CS75 (Summer 2012) Lecture 9 Scalability Harvard Web Development David Malan</a>
       <ul><li><a href="http://ninefu.github.io/blog/Harvard_CS75_Notes/">Notes for Harvard CS75 Web Development Lecture 9 Scalability by David Malan</a> </li></ul>
     </li>
+    <li><a href="http://ninefu.github.io/blog/System_Design_Reading_List/">System Design Reading List by Nine Notes</a> </li>
   </ul>
