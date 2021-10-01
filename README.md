@@ -140,4 +140,7 @@
     <li><a href="http://highscalability.com/">High Scalability</a> </li>
     <li><a href="http://patrickhalina.com/posts/ml-systems-design-interview-guide/">ML Systems Design Interview Guide by Patrik Halina</a> </li>
     <li><a href="https://github.com/alex/what-happens-when">What happens when you type something in address bar.</a> </li>
+    <li><a href="https://www.youtube.com/watch?v=-W9F__D3oY4&ab_channel=JorgeScott">CS75 (Summer 2012) Lecture 9 Scalability Harvard Web Development David Malan</a>
+      <ul><li><a href="http://ninefu.github.io/blog/Harvard_CS75_Notes/">Notes for Harvard CS75 Web Development Lecture 9 Scalability by David Malan</a> </li></ul>
+    </li>
   </ul>
