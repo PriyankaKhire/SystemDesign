@@ -87,6 +87,7 @@
         <li><a href="Basics/Other Softwares/Docker/README.md">Docker</a> </li>
         <li><a href="Basics/Other Softwares/Zookeeper/README.md">Zookeeper</a> </li>
         <li><a href="Basics/Other Softwares/Apache Solr/README.md">Solr</a> </li>
+        <li><a href="Basics/Other Softwares/ElasticSearch/README.md">Elasticsearch</a></li>
       </ol>
     </li>
     <li> Designing Data-Intensive Applications Notes
