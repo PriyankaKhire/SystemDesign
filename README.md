@@ -145,4 +145,5 @@
       <ul><li><a href="http://ninefu.github.io/blog/Harvard_CS75_Notes/">Notes for Harvard CS75 Web Development Lecture 9 Scalability by David Malan</a> </li></ul>
     </li>
     <li><a href="http://ninefu.github.io/blog/System_Design_Reading_List/">System Design Reading List by Nine Notes</a> </li>
+    <li><a href="https://www.teamblind.com/post/willing-to-help-for-system-design-xQQ5u63y">System design steps from Blind Article by gf- From Flipkart</a></li>
   </ul>
