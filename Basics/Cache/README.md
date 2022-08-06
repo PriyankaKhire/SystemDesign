@@ -163,6 +163,14 @@
 <h2>Distributed Caching</h2>
   <p>The cache can either reside on the application server as mentioned in Server side caching above. Or we can implement it as an individual cluster separate from the application servers see global cache in server side cache.</p>
   
+<h2>Considerations for using Cache</h2>
+  <ul>
+    <li>Consider using cache when the data is read frequently but modified infrequently</li>
+    <li>Cache is a volatile memory, so if a cache server is restarted all data in it is lost</li>
+    <li>Generally a good practice to have TTL (time to live) on the cached data, and make sure the expiration data is not set too far in future (data can become stale) or too near in future (too many cache misses and having to frequently load from DB)</li>
+    <li><b>Consistency</b>: we need to make sure that DB and cache are in sync but when we are scaling across multiple regions, maintaining consistency between cache and DB becomes very challenging</li>
+  </ul>
+  
 
 <h1>Good Reads</h1>
   <a href="https://igotanoffer.com/blogs/tech/caching-system-design-interview">Caching from igotanoffer</a><br/>
