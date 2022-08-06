@@ -24,6 +24,8 @@
                 <li>Reverse Proxy (or CDN):
                     <p>A CDN is network of geographically dispersed servers that are used to deliver static content. </p>
                     <p><b>How does a CDN work ?</b> When a user visits a website a CDN server closest to the user will deliver him static content. So the further the user is from a CDN server the slower website will load.</p>
+                    <p>The below figure shows how CDN improves load times.</p>
+                    <img src="img/CDNLoadTimes.png">
                     <p>Website resources are stored in intermediate servers (CDN), instead of your visitor's local drives.</p>
                     <p>For example, when a visitor accesses a blog with a header image, the proxy server looks for the image in its cache. 
                     If it’s the first time that the image is accessed, the server needs to request it from the origin. 
