@@ -131,6 +131,17 @@
         <li><a href="SysDesigns/Instagram/2012 Sharding/README.md">Sharding 2012</a> </li>
       </ul>
     </li>
+    <li><a href="SysDesigns/Centralized Logging System/README.md">Centralized Logging System</a>
+      <ul>
+        <li>Types of Logging approaches
+          <ol>
+            <li><a href="SysDesigns/Centralized%20Logging%20System/Replication%20Approch/Approch.PNG">Logs are copied from the DB</a></li>
+            <li><a href="SysDesigns/Centralized%20Logging%20System/Transport%20Approch/Approch.PNG">Logs are copied from the server</a></li>
+          </ol>
+        </li>
+        <li><a href="SysDesigns/Centralized%20Logging%20System/Netflix's%20logging%20system/README.md">Netflix's Logging System</a></li>
+      </ul>
+    </li>
   </ul>
 
 <h1>Good Reads</h1>
