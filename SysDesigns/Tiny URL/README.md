@@ -75,7 +75,7 @@
         <p>The problem with this approach is that we need to hit the DB every time we have to check if the hash value exists or not.</p>
       <h4>Base 62 conversion</h4>
         <p>Below image represents the base 62 table</p>
-        <img src="img/Base 62 Table.PNG">
+        <img src="img/Base 62 Table.png">
         <p>The idea with this approach is we can have our relational database generate unique incremental id of length 7 (we can even make this as our Primary key) then take this number and convert it in to base 62. </br> Let us take an exaple to understand this idea.</p>
         <table>
           <tr><th>Number</th><th>Remainder</th><th>Representation in base 62</th></tr>
