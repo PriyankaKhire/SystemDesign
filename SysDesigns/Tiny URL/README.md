@@ -98,8 +98,13 @@
           <p>Problem with this approach is can the ever increasing sequence of number overflow ? Or if we are appending userId then what happens if user is not signed in or it's a guest account.</p>
       <h4>Base 62 conversion</h4>
         <p>Below image represents the base 62 table</p>
+<<<<<<< HEAD
         <img src="img/Base 62 Table.PNG">
         <p>The idea with this approach is we can have our relational database generate unique incremental id of length 7 (we can even make this as our Primary key) then take this number and convert it in to base 62. </br> Let us take an example to understand this idea.</p>
+=======
+        <img src="img/Base 62 Table.png">
+        <p>The idea with this approach is we can have our relational database generate unique incremental id of length 7 (we can even make this as our Primary key) then take this number and convert it in to base 62. </br> Let us take an exaple to understand this idea.</p>
+>>>>>>> 36fc102def003b61dd2c05979a3f0ed21eb7c88b
         <table>
           <tr><th>Number</th><th>Remainder</th><th>Representation in base 62</th></tr>
           <tr><td>11157 / 62 = 179</td><td>59</td><td>x</td></tr>
