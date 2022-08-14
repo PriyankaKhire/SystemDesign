@@ -1,4 +1,4 @@
-<h1>Movie ticket booking system / Hotel reservation system</h1>
+<h1>Hotel reservation system</h1>
   <h2>Requirements</h2>
     <h3>Functional Requirements</h3>
       <ul>
@@ -60,7 +60,117 @@
         <tr><td>PUT /v1/reservations/ID</td><td>PUT</td><td>ID of the reservation and json body containing the information you want to update</td><td>Success if the reservation was updated successfully else failure</td><td>Update a reservation</td></tr>
         <tr><td>DELETE /v1/reservations/ID</td><td>DELETE</td><td>ID of the reservation</td><td>Success if the reservation is deleted successfully else failure</td><td>Cancel a reservation</td></tr>
       </table>
-  
+  <h2>Data Model</h2>
+    <p>Before chosing on how to model our data, let's take a look at what data we are interested in storing</p>
+    <ol>
+      <li><b>Hotel Related</b></li>
+      <ul>
+        <li>Hotel Id</li>
+        <li>Hotel name</li>
+        <li>Hotel address</li>
+        <li>Number of rooms</li>
+      </ul>
+      <li><b>Room Related</b></li>
+      <ul>
+        <li>Room ID</li>
+        <li>Room type (example: smoking, non-smoking)</li>
+        <li>Room number</li>
+        <li>Room is_available</li>
+        <li>Room details</li>
+      </ul>
+      <li><b>Reservation Related</b></li>
+      <ul>
+        <li>Reservation ID</li>
+        <li>Hotel ID</li>
+        <li>Room ID</li>
+        <li>User ID</li>
+        <li>Start Date</li>
+        <li>End Date</li>
+      </ul>
+      <li>User Related</li>
+      <ul>
+        <li>User ID</li>
+        <li>Name</li>
+        <li>Email</li>
+      </ul>
+    </ol>
+    <h3>Which DB to use?</h3>
+      <p>There are more users who view rooms and their details as opposed to booking them. So we know that this is a <b>Read Heavy</b> system.</p>
+      <h4>Relational DB</h4>
+        <ul>
+          <li>Relational DBs work well with read-heavy systems because their fetch times are faster. You can also index a few fields to fetch them faster.</li>
+          <li>They are ACID complient. (Atomicity, consistency, isolation and durability) We need this property of DB in payment heavy systems. Because they help with problems such as double booking etc.</li>
+          <li>The above listed data has clear relationship which can be modeled well in relational DB.</li>
+        </ul>
+      <h4>Non-relational DB</h4>
+        <ul>
+          <li>Many new non-relational DBs are ACID complient such as Cassandra.</li>
+        </ul>
+    <h3>Schema</h3>
+      <table>
+        <tr><th colspan="2">Hotel Related</th></tr>
+        <tr>
+          <td>
+            <table>
+              <tr><th>Hotel</th></tr>
+              <tr><td><b>id [Primary Key]</b></td></tr>
+              <tr><td>name</td></tr>
+              <tr><td>address</td></tr>
+              <tr><td>number of rooms</td></tr>
+            </table>
+          </td>
+          <td>
+            <table>
+              <tr><th>Room</th></tr>
+              <tr><td><b>id [Primary Key]</b></td></tr>
+              <tr><td>type id [Can add index on this]</td></tr>
+              <tr><td>number</td></tr>
+              <tr><td>is_available</td></tr>
+              <tr><td><i>Hotel ID [Foreign Key]</i></td></tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr><th colspan="3">Reservation Related</th></tr>
+        <tr>
+          <td>
+            <table>
+              <tr><th>Reservation</th></tr>
+              <tr><td><b>id [Primary Key]</b></td></tr>
+              <tr><td><i>Hotel ID [Foreign Key]</i></td></tr>
+              <tr><td><i>Room ID [Foreign Key]</i></td></tr>
+              <tr><td><i>User ID [Foreign Key]</i></td></tr>
+              <tr><td>Start Date</td></tr>
+              <tr><td>End Date</td></tr>
+            </table>
+          </td>
+          <td>
+            <table>
+              <tr><th>Room Inventory</th></tr>
+              <tr><td><i>Hotel ID [Foreign Key]</i></td></tr>
+              <tr><td>Room Type ID</td></tr>
+              <tr><td>Date</td></tr>
+              <tr><td>Total available</td></tr>
+            </table>
+          </td>
+          <td>
+            <table>
+              <tr><th>Room Rate</th></tr>
+              <tr><td><i>Hotel ID [Foreign Key]</i></td></tr>
+              <tr><td>Room type id</td></tr>
+              <tr><td>Date</td></tr>
+              <tr><td>Rate</td></tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr><th>User</th></tr>
+        <tr><td><b>id [Primary Key]</b></td></tr>
+        <tr><td>Name</td></tr>
+        <tr><td>Email</td></tr>
+      </table>
   
   <h2>Good Reads</h2>
     <ul>
