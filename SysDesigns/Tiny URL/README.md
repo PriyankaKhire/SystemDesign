@@ -93,7 +93,14 @@
           <img src="img/Hash Collision Resolution.png">
           <p>The problem with this approach is that we need to hit the DB every time we have to check if the hash value exists or not.</p>
         <h5>Solution 2</h5>
-          <p>Another approach to solving the length problem is we can append to the long URL, either the <i>user ID</i> or <i>increasing sequence number</i> (we can have the DB generate this number). We then pass this new long URL through the hash function and take the first 7 characters, this will make every long URL unique.</p>
+          <p>Another approach to solving the length problem is we can append to the long URL, to the following:
+            <ul>
+              <li><i>user ID</i></li>
+              <li><i>increasing sequence number</i> (we can have the DB generate this number). </li>
+              <li><i>epoch time stamp + thread id</i> (thread id only if we are worried for multiple requests coming in at the same time.)</li>
+            </ul> 
+            We then pass this new long URL through the hash function and take the first 7 characters, this will make every long URL unique.
+          </p>
           <img src="img/Hash Collision Resolution pt2.png">
           <p>Problem with this approach is can the ever increasing sequence of number overflow ? Or if we are appending userId then what happens if user is not signed in or it's a guest account.</p>
       <h4>Base 62 conversion</h4>
