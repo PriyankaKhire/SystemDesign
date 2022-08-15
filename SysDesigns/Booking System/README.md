@@ -175,6 +175,21 @@
     <h3>Data Storage</h3>
       <p>We could have done this section in capacity estimations, but having some more context over data schema and what database to use helps.</p>
       <p>Let us calculate data storage for independent tables. This will help us in identifying how many instances of DB we need, how much space we need, what sharding scheme to use etc.</p>
+      <ol>
+        <li>Hotel Related</li>
+        <ul>
+          <li><b>Hotel Table:</b> Total 5000 hotels, so 5000 rows.</li>
+          <li><b>Room Table:</b> Total 1million rooms, so those many rows. However, this table will be modified quiet frequently for the <i>is_available</i> field.</li>
+        </ul>
+        <li>Reservation Related</li>
+        <ul>
+          <li><b>Reservation Table:</b> From the capacity estimations we know that we have 240,000 reservations a day, so per year we have approximately 88 million reservations. Plus some reservations might be cancelled and we also need to account for 10% overflow booking, so we can assume there might be about 100 million rows in this table per year.</li>
+          <li><b>Room Inventory Table:</b> Since we store room data per day, we will at least have 365 rows in this table per year.</li>
+          <li><b>Room Rates Table:</b> The rates can change dynimically every day, so we can have 365 rows in this table per year.</li>
+        </ul>
+        <li>User: This table can have multiple entries, we can assume a number here for calculations, however remember there might also be guest users, who might not register. The size of this table will still not be as large.</li>
+      </ol>
+      <p>So, from above </p>
   
   <h2>Good Reads</h2>
     <ul>
