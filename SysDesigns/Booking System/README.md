@@ -56,12 +56,12 @@
         <tr><th>API</th><th>HTTP Request</th><th>Input</th><th>Output</th><th>Details</th></tr>
         <tr><td>GET /v1/reservations</td><td>GET</td><td>Json data provided in the body, for example: User Id, page offset(number of reservations per page)</td><td>Json data getting the past reservation history of the user.</td><td>Get reservation history of the user.</td></tr>
         <tr><td>GET /v1/reservations/ID</td><td>GET</td><td>User Id, reservation Id</td><td>Information about the reservation in json format</td><td>Get detailed information about a reservation.</td></tr>
-        <tr><td>POST /v1/reservations</td><td>POST</td><td>Following Json data in the body of the message: </br>{</br>&nbsp;&nbsp;&nbsp;&nbsp;"startDate": "2022-08-14", </br>&nbsp;&nbsp;&nbsp;&nbsp;"endDate": "2022-08-25",</br>&nbsp;&nbsp;&nbsp;&nbsp;"hotelID": "12345",</br>&nbsp;&nbsp;&nbsp;&nbsp;"roomID": "50",</br>&nbsp;&nbsp;&nbsp;&nbsp;"userId": "1056",</br>}</td><td>Success if the reservation was successful else failure</td><td>Make a new reservation</td></tr>
+        <tr><td>POST /v1/reservations</td><td>POST</td><td>Following Json data in the body of the message: </br>{</br>&nbsp;&nbsp;&nbsp;&nbsp;"startDate": "2022-08-14", </br>&nbsp;&nbsp;&nbsp;&nbsp;"endDate": "2022-08-25",</br>&nbsp;&nbsp;&nbsp;&nbsp;"hotelID": "12345",</br>&nbsp;&nbsp;&nbsp;&nbsp;"roomID": "50",</br>&nbsp;&nbsp;&nbsp;&nbsp;"userId": "1056",</br>&nbsp;&nbsp;&nbsp;&nbsp;"roomType": "King-Bed"</br>}</td><td>Success if the reservation was successful else failure</td><td>Make a new reservation</td></tr>
         <tr><td>PUT /v1/reservations/ID</td><td>PUT</td><td>ID of the reservation and json body containing the information you want to update</td><td>Success if the reservation was updated successfully else failure</td><td>Update a reservation</td></tr>
         <tr><td>DELETE /v1/reservations/ID</td><td>DELETE</td><td>ID of the reservation</td><td>Success if the reservation is deleted successfully else failure</td><td>Cancel a reservation</td></tr>
       </table>
   <h2>Data Model</h2>
-    <p>Before chosing on how to model our data, let's take a look at what data we are interested in storing</p>
+    <p>Before choosing on how to model our data, let's take a look at what data we are interested in storing</p>
     <ol>
       <li><b>Hotel Related</b></li>
       <ul>
@@ -99,12 +99,12 @@
       <h4>Relational DB</h4>
         <ul>
           <li>Relational DBs work well with read-heavy systems because their fetch times are faster. You can also index a few fields to fetch them faster.</li>
-          <li>They are ACID complient. (Atomicity, consistency, isolation and durability) We need this property of DB in payment heavy systems. Because they help with problems such as double booking etc.</li>
+          <li>They are ACID compliant. (Atomicity, consistency, isolation and durability) We need this property of DB in payment heavy systems. Because they help with problems such as double booking etc.</li>
           <li>The above listed data has clear relationship which can be modeled well in relational DB.</li>
         </ul>
       <h4>Non-relational DB</h4>
         <ul>
-          <li>Many new non-relational DBs are ACID complient such as Cassandra.</li>
+          <li>Many new non-relational DBs are ACID compliant such as Cassandra.</li>
         </ul>
     <h3>Schema</h3>
       <table>
@@ -143,6 +143,7 @@
               <tr><td><i>User ID [Foreign Key]</i></td></tr>
               <tr><td>Start Date</td></tr>
               <tr><td>End Date</td></tr>
+              <tr><td>Status [Pending, Paid, Refunded, Canceled, Rejected]</td></tr>
             </table>
           </td>
           <td>
@@ -158,7 +159,7 @@
             <table>
               <tr><th>Room Rate</th></tr>
               <tr><td><i>Hotel ID [Foreign Key]</i></td></tr>
-              <tr><td>Room type id</td></tr>
+              <tr><td>Room type ID</td></tr>
               <tr><td>Date</td></tr>
               <tr><td>Rate</td></tr>
             </table>
@@ -171,6 +172,9 @@
         <tr><td>Name</td></tr>
         <tr><td>Email</td></tr>
       </table>
+    <h3>Data Storage</h3>
+      <p>We could have done this section in capacity estimations, but having some more context over data schema and what database to use helps.</p>
+      <p>Let us calculate data storage for independent tables. This will help us in identifying how many instances of DB we need, how much space we need, what sharding scheme to use etc.</p>
   
   <h2>Good Reads</h2>
     <ul>
