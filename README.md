@@ -124,7 +124,11 @@
     <li><a href="SysDesigns/Tiny URL/README.md">Tiny URL</a>
       <ul><li><a href="SysDesigns/Tiny URL/Project/README.md">Project</a></li></ul>
     </li>
-    <li><a href="SysDesigns/Booking System/README.md">Hotel reservation system</a></li>
+    <li>Booking System</li>
+    <ul>
+      <li><a href="SysDesigns/Booking System/Hotel Reservation System/README.md">Hotel reservation system</a></li>
+      <li><a href="SysDesigns/Booking System/Avoiding Double Booking/README.md">Avoiding Double Booking</a></li>
+    </ul>
   </ul>
   <p>Notes on existing architectures</p>
   <ul>
