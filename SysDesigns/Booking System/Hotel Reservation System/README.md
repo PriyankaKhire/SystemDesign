@@ -189,10 +189,22 @@
         </ul>
         <li>User: This table can have multiple entries, we can assume a number here for calculations, however remember there might also be guest users, who might not register. The size of this table will still not be as large.</li>
       </ol>
-      <p>So, from above it is clear that Reservation table requires the most storage. 100Million rows per year is not a lot of storage, so we can get away with using just <b>single instance of DB</b>. However, single instance means single point of failure, to avoid this we can use replication schemes like master slave, where we read from slaves and write to master.</p>
-      <p>Now for some reason the reservation table does grow a lot and we need to use sharding, then we can user <i>hotel id</i> as sharding key. (but what if one hotel is more popular, even then the max reservations per year would be 365 * number of rooms, which is not a big number and we can allocate a shard for it)</p>
-  <h2>Avoiding Double Booking</h2>
-  
+      <h4>Replication</h4>
+        <p>So, from above it is clear that Reservation table requires the most storage. 100Million rows per year is not a lot of storage, so we can get away with using just <b>single instance of DB</b>. However, single instance means single point of failure, to avoid this we can use replication schemes like master slave, where we read from slaves and write to master.</p>
+      <h4>Sharding</h4>
+        <p>Now for some reason the reservation table does grow a lot and we need to use sharding, then we can user <i>hotel id</i> as sharding key. (but what if one hotel is more popular, even then the max reservations per year would be 365 * number of rooms, which is not a big number and we can allocate a shard for it)</p>
+      <h4>Caching</h4>
+        <p>Since room booking is read heavy, we can move the available inventory data to cache. So when a room gets booked, the DB gets updated and then the cache gets updated. </br>However, what if cache and DB are out of sync ? It doesn't really matter that much because at the end the DB will still validate the request and decide whether to forward with the transaction or not.</p>
+        <ul>
+          <li>Pros</li>
+          <ul>
+            <li>Increases performance</li>
+            <li>Reduced number of calls to DB.</li>
+          </ul>
+          <li>Cons</li>
+          <ul><li>Maintaining data consistency between cache and DB is hard.</li></ul>
+        </ul>
+  <h2><a href="../Avoiding Double Booking/README.md">Avoiding Double Booking</a></h2>
   <h2>Good Reads</h2>
     <ul>
       <li><a href="https://medium.com/airbnb-engineering/avoiding-double-payments-in-a-distributed-payments-system-2981f6b070bb">Avoiding Double Payments in a Distributed Payments System</a></li>
