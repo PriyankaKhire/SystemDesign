@@ -18,6 +18,7 @@
   <h2>Good Reads</h2>
     <ul>
       <li><a href="https://www.youtube.com/watch?v=rOTqprHv1YE">Docker tutorial by Simplilearn</a> </li>
+      <li><a href="https://www.youtube.com/watch?v=Tyy1BUEmhwg&ab_channel=LaithAcademy">Docker Crash Course</a></li>
     </ul>
   
   
