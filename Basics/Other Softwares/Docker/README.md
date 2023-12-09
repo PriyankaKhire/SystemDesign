@@ -5,6 +5,9 @@
     Docker is kinda like the VM but better. 
   </p>
   <h2>What is Docker</h2>
+    <p><b>Docker File:</b> A file that contains set of instructions to build an image that is needed to run our application. </p>
+    <p><b>Image:</b> Contains everything that is needed to run our application. Image doesn't run the application itself.</p>
+    <p><b>Container:</b> Instance of an image. This is what runs the application.</p>
     <p>Docker is a tool that provides you with containers to deploy your application in. <br/>
       The container is a software package that provides the application with all the dependencies it requires to execute. <br/>
       The containers all can run on same hardware but each of them can have their own configuration. <br/>
