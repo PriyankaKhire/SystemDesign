@@ -170,3 +170,7 @@
     <li><a href="http://ninefu.github.io/blog/System_Design_Reading_List/">System Design Reading List by Nine Notes</a> </li>
     <li><a href="https://www.teamblind.com/post/willing-to-help-for-system-design-xQQ5u63y">System design steps from Blind Article by gf- From Flipkart</a></li>
   </ul>
+<h1>Interviewing Resources</h1>
+  <ul>
+    <li><a href="https://sketchboard.me">Sketchboard to draw system design diagrams during interview</a></li>
+  </ul>
