@@ -25,6 +25,7 @@
       <li><b>Worker Node:</b> A K8s cluster can have 1 to many worker nodes. Think of these worker nodes as computer machines, they run the container in a pod. Containerized applications such as docker are installed on these worker nodes. The worker node has a kubelet that manages the communication with the master node amongst other things.</li>
       <img src="img/WorkerNode.png" height="300" width="350">
       <li><b>Master Node:</b> A K8s cluster can have 1 to many master nodes. The master node is responsible for maintaining the worker nodes and the pods that are running within them. We can communicate with the master node with help of API server that's present on the master node. The master node also hosts a scheduler, this scheduler is responsible for managing the capacity of the worker node.</li>
+      <img src="img/MasterNode.png" height="300" width="350">
     </ul>
   <h2>Good Reads</h2>
     <ul>
