@@ -1,5 +1,5 @@
 <h1>Relational Database</h1>
-  <p>A relational database is simply a database that uses a relational data model, which organizes data in tables with rows of data entries and columns of predetermined data types. Relationships between tables are represented with foreign key columns that reference the primary key columns of other tables. More on Relational databases <a href="RDBMS/README.md">here</a>. </p>
+  <p>A relational database is simply a database that uses a relational data model, which organizes data in tables with rows of data entries and columns of predetermined data types. Relationships between tables are represented with foreign key columns that reference the primary key columns of other tables. More on Relational databases <a href="../Databases/RDBMS/README.md">here</a>. </p>
   <h2>Advantages</h2>
     <ul>
       <li>They work with structured data.</li>
