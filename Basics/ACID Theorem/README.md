@@ -19,7 +19,7 @@
     <li><b>E</b>ventual consistency :- The system will be eventually consistent after the application input. The data will be replicated to different nodes and will eventually reach a consistent state. But the consistency is not guaranteed at a transaction level.</li>
   </ul>
   <p>This essentially means that: It’s OK to use stale data, and it’s OK to give approximate answers. <br/>
-     BASE providesless assurance than ACID, but it scales very well and reacts well to rapid data changes.
+     BASE provides less assurance than ACID, but it scales very well and reacts well to rapid data changes.
   </p>
 
 <h1>Good Reads</h1>
