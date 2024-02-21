@@ -77,6 +77,7 @@
   On basis of all this, you can scale the system</br>
   Also, don't forget about the overall consumer impact of your system.</br>
   Like, you are designing a system, but will the consumer benefit from your design ? because if they don't they won't use the system</br>
+<br>
 
 >  Many guides you've read will suggest doing back-of-the-envelope calculations at this stage. We believe this is often unnecessary. Instead, perform calculations only if they will directly influence your design. In most scenarios, you're dealing with a large, distributed system – and it's reasonable to assume as much. Many candidates will calculate storage, DAU, and QPS, only to conclude, "ok, so it's a lot. Got it." As interviewers, we gain nothing from this except that you can perform basic arithmetic.
 > 
@@ -224,5 +225,6 @@ Start with the simplest version of the problem and work your way up. For example
 
 
 <h2>Good Reads</h2>
+
 - [Leet code system design template](https://leetcode.com/discuss/career/229177/My-System-Design-Template)
 - [System design in a hurry](https://www.hellointerview.com/learn/system-design/in-a-hurry/delivery)
