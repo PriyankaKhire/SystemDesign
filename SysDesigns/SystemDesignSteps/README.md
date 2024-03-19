@@ -1,4 +1,4 @@
-<h1>How to approch System design</h1>
+<h1>How to approach System design</h1>
 
 <h2>Goals</h2>
   <h3>Functional Design Goals</h3>
@@ -79,9 +79,11 @@
   Like, you are designing a system, but will the consumer benefit from your design ? because if they don't they won't use the system</br>
 <br>
 
->  Many guides you've read will suggest doing back-of-the-envelope calculations at this stage. We believe this is often unnecessary. Instead, perform calculations only if they will directly influence your design. In most scenarios, you're dealing with a large, distributed system – and it's reasonable to assume as much. Many candidates will calculate storage, DAU, and QPS, only to conclude, "ok, so it's a lot. Got it." As interviewers, we gain nothing from this except that you can perform basic arithmetic.
-> 
->  Our suggestion is to explain to the interviewer that you would like to skip on estimations upfront and that you will do math while designing when/if necessary. When would it be necessary? Imagine you are designing a TopK system for trending topics in FB posts. You would want to estimate the number of topics you would expect to see, as this will influence whether you can use a single instance of a data structure like a min-heap or if you need to shard it across multiple instances, which will have a big impact on your design.
+> Main things to note for capacity estimations
+> 1. Traffic Estimations: Read and write requests per second.
+> 2. Storage Estimations: Storage needed to store 3 years of data.
+> 3. Bandwidth Estimations: Number of bytes/sec system should handle for incoming and outgoing traffic. 
+> 4. Cache Estimations: Memory needed to cache hot reads.
 
 <h2>High Level diagram</h2>
 <p>
@@ -108,7 +110,7 @@ Start with high level block diagram.</br>
   </ol>
 
   <h3>API Design</h3>
-    **RESTful API**: The standard communication protocol of the internet. Uses HTTP verbs (GET, POST, PUT, DELETE) to perform CRUD operations on resources.<br>
+    **RESTful API**: The standard communication protocol of the internet. Uses HTTP verbs (GET, POST, PUT, DELETE) to perform CRUD operations on resources. Uses json encoding for inputs and outputs.<br>
     **For example**: For Twitter the REST api would look like this
     
 ```yaml
@@ -125,10 +127,10 @@ Start with high level block diagram.</br>
 ```
 > Notice how there is no **UserId** in the POST /v1/tweet/create endpoint? This is because we will get the id of the user initiating the request from the authentication token in the request header. Putting sensitive information like authentication tokens in the request body is a security risk.
 
-<h2>Define a data model</h2>
+<h2>Database: Define a data model</h2>
 <p>
 Ok, so we designed classes, but what is the primary key ? <br/>
-How exaclty am I storing them ? <br/>
+How exactly am I storing them ? <br/>
 What database am I going to use ? SQL vs NoSQL ? <br/>
 </p>
 
