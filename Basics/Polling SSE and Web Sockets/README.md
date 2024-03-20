@@ -52,9 +52,8 @@
 	  <code>00:00:30 C-> Is the other cake ready? </code><br/>
 	  <code>00:00:35 S-> No, wait. </code><br/>
 	  <p>The client (C) repeatedly asks the server (S) if the cake is ready at fixed intervals (every 5 seconds). The client (C) continues to ask about the cake's readiness at the fixed intervals, regardless of the server's responses.</p>
-	  
 	<h3>Adaptive Polling</h3>
-      <ol>
+          <ol>
 	    <li>The client sends a HTTP request to the server at a predetermined frequency, initially.</li>
 		<li>After each response from the server, the client analyzes the content of the response to determine if there are any updates or changes.</li>
 		<li>If updates are detected, the client may increase the polling frequency to receive updates more frequently.</li>
