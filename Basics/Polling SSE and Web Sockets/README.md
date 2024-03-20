@@ -31,7 +31,44 @@
     <code>12:00 00:00:00 C-> Is the cake ready? </code><br/>
     <code>12:00 00:00:03 S-> Yes.Have some lad. </code><br/>
     <code>12:00 00:00:03 C-> Is the cake ready? </code><br/>
-    
+	
+  <h2>Interval Polling and Adaptive Polling</h2>
+    <h3>Interval Polling</h3>
+	  <ol>
+	    <li>The client sets a predetermined polling interval and sends a HTTP request to the server at fixed intervals.</li>
+		<li>The server responds to each request, providing updates <i>if available</i> or indicating no updates.</li>
+		<li>After receiving a response, the client evaluates factors such as <u>server response times or network conditions</u>.</li>
+		<li>Based on this evaluation, the client dynamically adjusts the polling interval for subsequent requests.</li>
+		<li>The client repeats the process by sending requests at the adjusted intervals and continues to dynamically adjust the polling interval based on ongoing evaluations.</li>
+		<li></li>
+	  </ol>
+	  Example of Interval Polling: <br/>
+	  <code>00:00:00 C-> Is the cake ready? </code><br/>
+      <code>00:00:05 S-> No, wait. </code><br/>
+	  <code>00:00:10 C-> Is the cake ready? </code><br/>
+      <code>00:00:15 S-> No, wait. </code><br/>
+	  <code>00:00:20 C-> Is the cake ready? </code><br/>
+	  <code>00:00:25 S-> Yes. Have some lad. </code><br/>
+	  <code>00:00:30 C-> Is the other cake ready? </code><br/>
+	  <code>00:00:35 S-> No, wait. </code><br/>
+	  <p>The client (C) repeatedly asks the server (S) if the cake is ready at fixed intervals (every 5 seconds). The client (C) continues to ask about the cake's readiness at the fixed intervals, regardless of the server's responses.</p>
+	  
+	<h3>Adaptive Polling</h3>
+      <ol>
+	    <li>The client sends a HTTP request to the server at a predetermined frequency, initially.</li>
+		<li>After each response from the server, the client analyzes the content of the response to determine if there are any updates or changes.</li>
+		<li>If updates are detected, the client may increase the polling frequency to receive updates more frequently.</li>
+		<li>Conversely, if no updates are received or if updates are infrequent, the client may decrease the polling frequency to conserve resources and reduce unnecessary requests.</li>
+		<li>The client continues to adjust the polling frequency dynamically based on the presence or absence of updates.</li>
+	  </ol>
+	  Example of Adaptive Polling: <br/>
+	  <code>00:00:00 C-> Is the cake ready? </code><br/>
+	  <code>00:00:01 S-> No, wait. </code><br/>
+	  <code>00:00:05 C-> Is the cake ready? </code><br/>
+	  <code>00:00:06 S-> Yes. Have some lad. </code><br/>
+	  <code>00:00:09 C-> Is the other cake ready? </code><br/>
+	  <code>00:00:10 S-> No, wait. </code><br/>
+	  <p>When the client gets the response from the server that the cake is not ready it adjusts the frequency of polling.</p>
   
 <h1>Server Sent Events (SSE)</h1>  
   <p>In this process, the server establishes a one way, long term connection with the client. Only the server is allowed to push data to the client. If the client wants to send data to the server, it needs to use another technology/protocol to do so.</p>
