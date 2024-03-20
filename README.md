@@ -115,11 +115,11 @@
   </ol> 
     
 <h1>System Design</h1>
-  <p>Basics</p>
+  <h2>Basics</h2>
   <ul>
     <li><a href="SysDesigns/SystemDesignSteps/README.md">Basic System Design Steps</a></li>
   </ul>
-  <p>My designs</p>
+  <h2>My designs</h2>
   <ul>
     <li><a href="SysDesigns/NewsFeed/README.md">News Feed</a>
       <ul><li><a href="SysDesigns/NewsFeed/Project/README.md">Project</a></li></ul>
@@ -133,7 +133,7 @@
       <li><a href="SysDesigns/Booking System/Avoiding Double Booking/README.md">Avoiding Double Booking</a></li>
     </ul>
   </ul>
-  <p>Notes on existing architectures</p>
+  <h2>Notes on existing architectures</h2>
   <ul>
     <li><a href="SysDesigns/Pinterest/README.md">Pinterest Architecture 2012</a> </li>
     <li><a href="SysDesigns/Dynamo/README.md">Dynamo: Distributed key-value store</a> </li>
@@ -154,6 +154,10 @@
         <li><a href="SysDesigns/Centralized%20Logging%20System/Netflix's%20logging%20system/README.md">Netflix's Logging System</a></li>
       </ul>
     </li>
+  </ul>
+  <h2>White Papers</h2>
+  <ul>
+    <li><a href="SysDesigns/White Papers/Lessons from Giant-Scale Services/README.md">Lessons from Giant-Scale Services</a></li>
   </ul>
 
 <h1>Good Reads</h1>
