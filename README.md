@@ -81,6 +81,7 @@
         <li><a href="Basics/Other Concepts/Gossip Protocol/README.md">Gossip Protocol</a></li>
         <li><a href="https://www.youtube.com/watch?v=zaRkONvyGr8&ab_channel=GauravSen">Consistent Hashing</a> </li>
         <li><a href="Basics/Other Concepts/Stateless Web Tier/README.md">Stateless Web Tier</a></li>
+		<li><a href="Basics/Other Concepts/Reliability/README.md">Reliability</a></li>
       </ol>
     </li>
     <li>Other Softwares
