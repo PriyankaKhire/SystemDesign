@@ -11,6 +11,7 @@
   </ul>
   <img src="img/HorizontalScaling.PNG">
   <p><b>Databases running horizontal scaling:</b> Cassandra, MongoDB, Google Cloud Spanner</p>
+  <p><b>Examples:</b> Cassandra and MongoDB as they both provide an easy way to scale horizontally by adding more machines to meet growing needs. </p>
  
 
 <h1>Vertical Scaling</h1>
@@ -27,5 +28,6 @@
   </ul>
   <img src="img/VerticalScaling.PNG">
   <p><b>Databases running vertical scaling:</b> MySQL, Amazon RDS</p>
+  <p><b>Example:</b> MySQL as it allows for an easy way to scale vertically by switching from smaller to bigger machines.</p>
 
 <img src="img/HorizontalVSVertical.PNG">
