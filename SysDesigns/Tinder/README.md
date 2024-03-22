@@ -1,4 +1,4 @@
-<h1>Tinder</h1>
+![Tinder](https://github.com/PriyankaKhire/SystemDesign/assets/12015512/12b98d15-dab7-4aff-a9a4-b64a6262f309)
   
 <h2>Requirements</h2>
 
@@ -13,4 +13,5 @@
 
 1. When the person logs in, they need to be able to see the recommended users with as little latency as possible.
 2. The system should be highly available.
+
 
