@@ -14,7 +14,7 @@
 1. When the person logs in, they need to be able to see the recommended users with as little latency as possible.
 2. The system should be highly available.
 
-<h3>Capacity Estimations</h3>
+<h2>Capacity Estimations</h2>
 
 - Storage: 
   - 50 million members
@@ -30,6 +30,23 @@
     - users updating their profiles
       
 This is a read heavy system. (Since we are not considering chatting as part of this design)
+
+<h2>User Profile Creation</h2>
+
+- Responsible for creating user profiles.
+- Stores user information in a database.
+- Adds users to a geo-sharded index to enable nearby user recommendations.
+<h3>High level diagram</h3>
+
+<h3>API design</h3>
+<h3>Component design</h3>
+
+<h1>Good Reads</h1>
+
+- [Designing Tinder - High scalability blog](https://highscalability.com/designing-tinder/)
+
+
+
 
 
 
