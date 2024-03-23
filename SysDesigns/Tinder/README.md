@@ -37,7 +37,7 @@ This is a read heavy system. (Since we are not considering chatting as part of t
 - Stores user information in a database.
 - Adds users to a geo-sharded index to enable nearby user recommendations.
 <h3>High level diagram</h3>
-
+<img scr="img/UserProfileCreation.png">
 <h3>API design</h3>
 <h3>Component design</h3>
 
