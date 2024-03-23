@@ -14,4 +14,22 @@
 1. When the person logs in, they need to be able to see the recommended users with as little latency as possible.
 2. The system should be highly available.
 
+<h3>Capacity Estimations</h3>
+
+- Storage: 
+  - 50 million members
+    - Assume each member meta data record is 100KB then to store member data we need 50million * 100Kb = 5TB of storage space
+    - Assume we allow 10 pics of max size 3MB each per profile, we need 50million * 10 * 3MB = 187.5 TB of storage for media.
+- Reads: Reads would be in the form of showing our users the recommended profiles in their geographic region. The reads depend on daly active users and how many maximum profiles they are shown a day
+  - Assume we have 1million daly active users and at max each user is shown 100 profiles
+    - then each user is reading = 100 profiles * (user metadata 100KB + pics (3MB * 10)) = 3.01GB per day
+    - 1million users are reading a total of 3.01PB a day
+- Writes:
+  - Writes can be in the form of
+    - user sign ups
+    - users updating their profiles
+      
+This is a read heavy system. (Since we are not considering chatting as part of this design)
+
+
 
