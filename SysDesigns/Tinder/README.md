@@ -36,14 +36,126 @@ This is a read heavy system. (Since we are not considering chatting as part of t
 - Responsible for creating user profiles.
 - Stores user information in a database.
 - Adds users to a geo-sharded index to enable nearby user recommendations.
-<h3>High level diagram</h3>
-<img scr="img/UserProfileCreation.png">
+
+<h3>High level diagram and explanation</h3>
+<h4>Creating user profile</h4>
+<img src="img/UserProfileCreation.png">
+
+- **User Media Upload:** User media (such as photos) is uploaded to a file server.
+- **Metadata:** User information, including their location, is stored in a key-value store like Amazon DynamoDB.
+- **Geo Queue:** User's profile information along with their location is added to queue for further processing.
+
+<h4>Adding user info to geo-shard</h4>
+<img src="img/AddingUserProfileToGeoShard.png">
+
+- **GeoShardingIndexer:** It reads information from the queue asynchronously, then maps user information to a geo-shard and then write the user info to that geo-shard.
+- **Geo-shard:** The information from this geo-shard is later used in recommendation system.
+- By mapping the user's location to a specific geo-shard, the system ensures that the user appears in the recommendations of nearby users. 
+
 <h3>API design</h3>
-<h3>Component design</h3>
+
+<h4>Create Profile API</h4>
+
+```yaml
+POST datingAppService/v1/createProfile
+```
+Input:
+```yaml
+\\ Json encoding
+Headers: {
+  AuthToken
+}
+Body: {
+  name
+  email
+  birth date
+  gender
+  location: {
+              latitude
+              longitude
+            }
+}
+```
+Output:
+```yaml
+\\ Json encoding
+{
+  Http Status
+  Message
+}
+```
+Http Status:
+- 200 for Ok
+- 400/500 for errors
+  
+Message:
+- Empty if status is 200
+- Displays error message
+
+<h4>Batch Upload Profile Pictures</h4>
+
+```yaml
+POST datingAppService/v1/uploadPictures
+```
+Input:
+```yaml
+Headers: {
+  AuthToken
+  Content-Type: image/jpeg
+  Accept-Encoding: gzip, deflate
+}
+Body: {
+  profile id \\ We can also put profile id in auth token
+  pictures : [
+              {
+                 tags: {
+                         caption
+                       }
+                 file: {
+                         file-name
+                         contents // The image file is sent as a Base64 String
+                       }
+              },
+              {
+                 tags: {
+                         caption
+                       }
+                 file: {
+                         file-name
+                         contents 
+                       }
+              },
+              .
+              .
+              .
+             ]
+}
+```
+**Base64 String representation of the image:** The base64 string as a JSON string with the requests. Base64 is a way to encode binary data into an ASCII character format by translating it into a radix-64 representation.
+Output:
+```yaml
+\\ Json encoding
+{
+  Http Status
+  Message
+}
+```
+Http Status:
+- 200 for Ok
+- 400/500 for errors
+  
+Message:
+- Empty if status is 200
+- Displays error message and which upload failed.
+
+<h4>Set Recommended User Preferences</h4>
+
+
 
 <h1>Good Reads</h1>
 
 - [Designing Tinder - High scalability blog](https://highscalability.com/designing-tinder/)
+- [Uploading pictures with REST api](https://nimesha-dilini.medium.com/send-image-files-in-an-api-post-request-aa1af1c4a7fb)
 
 
 
