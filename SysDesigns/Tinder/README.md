@@ -74,6 +74,14 @@ Body: {
               latitude
               longitude
             }
+  recommendationPreferences: {
+                               ageRange: {
+                                           minAge
+                                           maxAge
+                                         }
+                               radius
+                               gender
+                             }
 }
 ```
 Output:
@@ -148,7 +156,78 @@ Message:
 - Empty if status is 200
 - Displays error message and which upload failed.
 
-<h4>Set Recommended User Preferences</h4>
+<h4>Update Recommended User Preferences</h4>
+
+```yaml
+PUT datingAppService/v1/updateRecommendationPreferences
+```
+Input:
+```yaml
+\\ Json encoding
+Headers: {
+  AuthToken
+}
+Body: {
+  userId
+  ageRange: {
+              minAge
+              maxAge
+            }
+  radius
+  gender
+}
+```
+Output:
+```yaml
+\\ Json encoding
+{
+  Http Status
+  Message
+}
+```
+Http Status:
+- 200 for Ok
+- 400/500 for errors
+  
+Message:
+- Empty if status is 200
+- Displays error message
+
+<h3>Database: Data Model</h3>
+We can use a key-value store like Amazon DynameDB to store this type of data.
+
+```yaml
+{
+  UserID (PK),
+  Name,
+  Age,
+  Gender,
+  Location: {
+              latitude,
+              longitude
+            }
+  Media: [
+          {
+            FileName,
+            ImageLocation // S3 bucket location
+          },
+          {
+            FileName,
+            ImageLocation
+          },
+         ]
+  RecommendationPreferences: {
+                                AgeRange: {
+                                             MinAge,
+                                             MaxAge
+                                          },
+                                Gender,
+                                Radius
+                             }
+}
+```
+<h2>Fetch User Recommendations</h2>
+<h3>High level diagram and explanation</h3>
 
 
 
