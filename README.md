@@ -132,7 +132,7 @@
       <li><a href="SysDesigns/Booking System/Hotel Reservation System/README.md">Hotel reservation system</a></li>
       <li><a href="SysDesigns/Booking System/Avoiding Double Booking/README.md">Avoiding Double Booking</a></li>
     </ul>
-	<li><a href="SysDesigns/Tinder/README.md">Tinder</a></li>
+	<li><a href="SysDesigns/Tinder/README.md">Tinder (User profile creation and nearby user recommendation)</a></li>
   </ul>
   <h2>Notes on existing architectures</h2>
   <ul>
