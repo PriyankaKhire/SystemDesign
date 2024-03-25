@@ -310,7 +310,7 @@ Users interact with the application by swiping left or right, indicating their i
 
 - [Designing Tinder - High scalability blog](https://highscalability.com/designing-tinder/)
 - [Uploading pictures with REST api](https://nimesha-dilini.medium.com/send-image-files-in-an-api-post-request-aa1af1c4a7fb)
-
+- [Geosharded Recommendations, Tinder Medium](https://medium.com/tinder/geosharded-recommendations-part-1-sharding-approach-d5d54e0ec77a)
 
 
 
