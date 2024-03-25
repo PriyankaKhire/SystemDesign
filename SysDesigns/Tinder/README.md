@@ -133,9 +133,7 @@ Body: {
                          contents 
                        }
               },
-              .
-              .
-              .
+              ...
              ]
 }
 ```
@@ -226,9 +224,74 @@ We can use a key-value store like Amazon DynameDB to store this type of data.
                              }
 }
 ```
-<h2>Fetch User Recommendations</h2>
-<h3>High level diagram and explanation</h3>
 
+<h2>Fetch User Recommendations</h2>
+
+<h3>High level diagram and explanation</h3>
+<img src="img/FetchUserRecommendation.png">
+
+- User makes a request to the Recommendation Service, seeking recommendations.
+- The Recommendation Service forwards the user request to the GeoShardedIndexer for processing.
+- The GeoShardedIndexer utilizes geo-libraries like Google's S2 to determine the geo-shards to be queried based on the user's location and the specified radius.
+- After determining the relevant geo-shards, the indexer queries all the geo-sharded indexes associated with those shards. These indexes contain information about users within the specified geographical areas.
+- Upon retrieving the list of users from the geo-sharded indexes, the Recommendation Service applies filtering based on user preferences. This filtering may involve factors such as age, interests, gender, and other criteria specified by the user.
+- After filtering, the Recommendation Service compiles the final list of recommendations tailored to the requesting user's preferences and requirements.
+
+<h3>API design</h3>
+
+```yaml
+GET datingAppService/v1/recommendedUsers
+```
+Input:
+```yaml
+\\ Json encoding
+Headers: {
+  AuthToken
+}
+Body: {
+  userId
+}
+```
+Output:
+```yaml
+{
+  Http Status
+  Message
+  Users: [
+           {
+              name
+              age
+              media: {
+                       file1,
+                       file2,
+                       ...
+                     }
+             bio
+           },
+           ...
+         ]
+}
+```
+Http Status:
+- 200 for Ok
+- 400/500 for errors
+  
+Message:
+- Empty if status is 200
+- Displays error message
+
+Users:
+- List of recommended user profiles
+
+<h3>Component design: Geo-shard Indexer</h3>
+
+- **Elastic search:** One way of designing this geo-shard indexer is to store all user records in a single elastic search index.
+  - This approach is not scalable because it may lead to uneven distribution of user data across shards, resulting in uneven query performance and potentially increased latency.
+- **Sharding based on active user records:** Map the users to their specific geo-shard based on their location. For densely populated area have more shards and for less populated area have low number of shards.
+  - **Querying geo-shards:**
+    - When a user profile is created, the system determines the corresponding cell representing the user's location and indexes the user in the search index associated with that cell.
+    - To fetch recommendations for a user, the system queries the indexes of nearby cells, determined based on the desired circle radius around the user's location.
+    
 
 
 <h1>Good Reads</h1>
