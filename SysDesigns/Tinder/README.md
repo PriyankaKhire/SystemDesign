@@ -292,7 +292,7 @@ Users:
     - When a user profile is created, the system determines the corresponding cell representing the user's location and indexes the user in the search index associated with that cell.
     - To fetch recommendations for a user, the system queries the indexes of nearby cells, determined based on the desired circle radius around the user's location.
     
-<h2>Swipes and Matches</h2>
+<!--<h2>Swipes and Matches</h2>
 Users interact with the application by swiping left or right, indicating their interest or disinterest in other users' profiles.
 <h3>Left Swipe</h3>
 <h4>High level diagram and explanation</h4>
@@ -304,7 +304,7 @@ Users interact with the application by swiping left or right, indicating their i
 <h4>High level diagram and explanation</h4>
 <img src="">
 <h4>API Design</h4>
-<h4>Database: Data Model</h4>
+<h4>Database: Data Model</h4>-->
 
 <h1>Good Reads</h1>
 
