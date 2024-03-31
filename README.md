@@ -60,7 +60,7 @@
           </ul>
         </li>
         <li><a href="Basics/Denormalization vs Normalization/README.md">Data Normalization and De-normalization</a></li>
-		<li><a href="Basics/Database Index/README.md">Database Indices</a></li>
+	<li><a href="Basics/Database Index/README.md">Database Indices</a></li>
       </ol>
     </li>
     <li> Components
