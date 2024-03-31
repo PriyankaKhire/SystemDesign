@@ -59,6 +59,7 @@
             <li><a href="Basics/Data Partitioning Criteria/README.md#name-node">Name Node</a></li>
           </ul>
         </li>
+	<li><a href="Basics/Data Replication/README.md">Data Replication</a></li>
         <li><a href="Basics/Denormalization vs Normalization/README.md">Data Normalization and De-normalization</a></li>
 	<li><a href="Basics/Database Index/README.md">Database Indices</a></li>
       </ol>
