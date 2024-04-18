@@ -162,6 +162,10 @@
   <ul>
     <li><a href="SysDesigns/White Papers/Lessons from Giant-Scale Services/README.md">Lessons from Giant-Scale Services</a></li>
   </ul>
+  <h2>ChatGPT 4 Generated Designs</h2>
+  <ul>
+    <li><a href="SysDesigns/ChatGPTGenerated/HowToOvercomeVariousChallengesLikeBugsFeaturesHazardsMigrationsOrScalabilityConstraints/README.md">System design a simple system and sketch out, at a systems level, how to overcome various challenges, like bugs, features, hazards, migrations, or scalability constraints.</a></li>
+  </ul>
 
 <h1>Good Reads</h1>
   <ul>
