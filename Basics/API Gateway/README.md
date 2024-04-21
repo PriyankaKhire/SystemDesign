@@ -1,5 +1,6 @@
 # API Gateway
 An API Gateway is a management tool that acts as a single point of entry for all the API calls from clients (like apps or web browsers) to services (like data storage or processing services). 
+
 <img src="img/API Gateway.png">
 
 API Gateway Acts as the middleman between clients and various backend services. It routes client requests to the appropriate service and can also handle other tasks like:
