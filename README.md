@@ -68,6 +68,7 @@
 	  <ol>
 	    <li><a href="Basics/API Gateway/README.md">API Gateway</a></li>
 		<li><a href="Basics/API Endpoint/README.md">API Endpoint</a></li>
+		<li><a href="Basics/API Design Concepts/README.md">API Design Concepts</a></li>
 		<!-- <li><a href=""></a></li> -->
 	  </ol>
 	</li>
